@@ -5,9 +5,12 @@ Take URLs or filenames for HTML documents on stdin and extract tag contents, att
 # You need GO installed
 https://go.dev/dl/
 # Install
-> go get -u github.com/ELIZEUOPAIN/html-tool
+```
+▶ go get -u github.com/ELIZEUOPAIN/html-tool
+```
 # Usage
-> html-tool 
+```
+▶ html-tool 
 Accept URLs or filenames for HTML documents on stdin and extract parts of them.
 
 Usage: html-tool <mode> [<args>]
@@ -21,8 +24,10 @@ Examples:
 	cat urls.txt | html-tool tags title a strong
 	find . -type f -name "*.html" | html-tool attribs src href
 	cat urls.txt | html-tool comments
-        
+```
+	
 # TODO
+
 *Support selectors with https://github.com/ericchiang/css
         
 *Option to ignore certificate errors
