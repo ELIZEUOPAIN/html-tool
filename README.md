@@ -15,7 +15,7 @@ apt install golang
 ▶ html-tool 
 
 ```
-Aceite URLs ou nomes de arquivos para documentos HTML em stdin e extraia partes deles.
+Coloque  URLs ou nomes de arquivos para documentos HTML em stdin e extraia partes deles.
 
 Usar: html-tool <comandos> [<args>]
 
@@ -25,13 +25,13 @@ comandos:
 	comments                Extrai comentários
 
 Exemplo:
-	echo "http://site.com.br" | /root/go/bin/html-tool comments 	*(Filtra os comentarios da pagina/URL)*
-	echo "http://site.com.br" | /root/go/bin/html-tool tags title 	*(Filtra as tags Titulo da pagina/URL)*
-	echo "http://site.com.br" | /root/go/bin/html-tool attribs src 	*(Filtra todos os atributos src da pagina/URL)*
+	echo "http://site.com.br" | /root/go/bin/html-tool comments 	*(Extrai os comentarios da pagina/URL)*
+	echo "http://site.com.br" | /root/go/bin/html-tool tags title 	*(Extrai as tags Titulo da pagina/URL)*
+	echo "http://site.com.br" | /root/go/bin/html-tool attribs src 	*(Extrai todos os atributos src da pagina/URL)*
 _____________________________________________________________OU___________________________________________________________________________
-	cat urls.txt | html-tool tags title a strong			*(Filtra as tags Titulo da pagina/URL)*
-	find . -type f -name "*.html" | html-tool attribs src href 	*(Filtra todos os atributos src e href da pagina/URL)*
-	cat urls.txt | html-tool comments 				*(Filtra os comentarios da pagina/URL)*
+	cat urls.txt | html-tool tags title a strong			*(Extrai as tags Titulo da pagina/URL)*
+	find . -type f -name "*.html" | html-tool attribs src href 	*(Extrai todos os atributos src e href da pagina/URL)*
+	cat urls.txt | html-tool comments 				*(extrai os comentarios da pagina/URL)*
 ```
 
 OBS: As vezes não é possivel ultilizar a ferramenta ultilizando apenas o "html-tool" na sintaxe do comando no Linux, então ultilize o echo
