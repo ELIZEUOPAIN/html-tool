@@ -142,19 +142,28 @@ func main() {
 	// TODO: check mode is valid
 	mode := flag.Arg(0)
 	if mode == "" {
-		fmt.Println("Accept URLs or filenames for HTML documents on stdin and extract parts of them.")
+		fmt.Println("A ferramenta aceita URLs ou nomes de arquivos para documentos HTML em stdin e extrai partes deles..")
 		fmt.Println("")
-		fmt.Println("Usage: html-tool <mode> [<args>]")
+		fmt.Println("html-tool <comandos> [<args>]")
 		fmt.Println("")
-		fmt.Println("Modes:")
-		fmt.Println("	tags <tag-names>        Extract text contained in tags")
-		fmt.Println("	attribs <attrib-names>  Extract attribute values")
-		fmt.Println("	comments                Extract comments")
+		fmt.Println("comandos:")
+		fmt.Println("	tags <nome-da-tag>        Extrair texto contido em tags")
+		fmt.Println("	attribs <nome-dos-atributos>  Extrair valores dos atributos")
+		fmt.Println("	comments                Extrai comentários")
 		fmt.Println("")
-		fmt.Println("Examples:")
+		fmt.Println("Exemplos:")
+		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool comments ") 
+			    //Filtra os comentarios da pagina/URL
+		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool tags title ") 
+			    //Filtra as tags Titulo da pagina/URL
+		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool attribs src ")
+			    //Filtra todos os atributos src da pagina/URL
 		fmt.Println("	cat urls.txt | html-tool tags title a strong")
+			    //Filtra as tags Titulo da pagina/URL
 		fmt.Println("	find . -type f -name \"*.html\" | html-tool attribs src href")
+			    //Filtra todos os atributos src e href da pagina/URL
 		fmt.Println("	cat urls.txt | html-tool comments")
+			     //Filtra os comentarios da pagina/URL
 		return
 	}
 
