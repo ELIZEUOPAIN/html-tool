@@ -5,9 +5,9 @@ Take URLs or filenames for HTML documents on stdin and extract tag contents, att
 # You need GO installed
 https://go.dev/dl/
 # Install
-go get -u github.com/ELIZEUOPAIN/html-tool
+> go get -u github.com/ELIZEUOPAIN/html-tool
 # Usage
-html-tool 
+> html-tool 
 Accept URLs or filenames for HTML documents on stdin and extract parts of them.
 
 Usage: html-tool <mode> [<args>]
