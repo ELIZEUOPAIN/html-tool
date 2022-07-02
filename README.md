@@ -1,31 +1,41 @@
 # html-tool
 HTML-Tool criadas na linguagem Go by https://github.com/tomnomnom
-# Preview
-Take URLs or filenames for HTML documents on stdin and extract tag contents, attribute values, or comments.
-# You need GO installed
+# O que a ferramenta faz ?
+Colocando URLs ou nomes de arquivo de documentos HTML em stdin, a ferramenta é usada como um filtro, ela procura na URLs/nome do arquivo todo os arquivos na página com o formato pre estabelecido! 
+# Você vai precisar de GO para usar a ferramenta!
 https://go.dev/dl/
-# Install
+
+apt install golang 
+# Instalar a ferramenta!
 ```
  go get -u github.com/ELIZEUOPAIN/html-tool
+
 ```
-# Usage
-```
+# Como usar:
 ▶ html-tool 
-Accept URLs or filenames for HTML documents on stdin and extract parts of them.
 
-Usage: html-tool <mode> [<args>]
-
-Modes:
-	tags <tag-names>        Extract text contained in tags
-	attribs <attrib-names>  Extract attribute values
-	comments                Extract comments
-
-Examples:
-	cat urls.txt | html-tool tags title a strong
-	find . -type f -name "*.html" | html-tool attribs src href
-	cat urls.txt | html-tool comments
 ```
+Aceite URLs ou nomes de arquivos para documentos HTML em stdin e extraia partes deles.
+
+Usar: html-tool <comandos> [<args>]
+
+comandos:
+	tags <nome-da-tag>        Extrair texto contido em tags
+	attribs <nome-dos-atributos>  Extrair valores dos atributos
+	comments                Extrai comentários
+
+Exemplo:
+	echo "http://site.com.br" | /root/go/bin/html-tool comments 	*(Tras os comentarios da pagina/URL)*
+	echo "http://site.com.br" | /root/go/bin/html-tool tags title 	*(Tras as tags Titulo da pagina/URL)*
+	echo "http://site.com.br" | /root/go/bin/html-tool attribs src 	*(Tras todos os atributos src da pagina/URL)*
 	
+	cat urls.txt | html-tool tags title a strong			*(Tras as tags Titulo da pagina/URL)*
+	find . -type f -name "*.html" | html-tool attribs src href 	*(Tras todos os atributos src e href da pagina/URL)*
+	cat urls.txt | html-tool comments 				*(Tras os comentarios da pagina/URL)*
+```
+
+OBS: As vezes não é possivel ultilizar a ferramenta ultilizando apenas o "html-tool" na sintaxe do comando no Linux, então ultilize o echo
+| /root/go/bin/html-tool (diretório onde foi instalado a ferramenta) comando! 
 # TODO
 
 *Support selectors with https://github.com/ericchiang/css
