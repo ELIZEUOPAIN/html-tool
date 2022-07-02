@@ -6,7 +6,7 @@ Take URLs or filenames for HTML documents on stdin and extract tag contents, att
 https://go.dev/dl/
 # Install
 ```
-▶ go get -u github.com/ELIZEUOPAIN/html-tool
+ go get -u github.com/ELIZEUOPAIN/html-tool
 ```
 # Usage
 ```
