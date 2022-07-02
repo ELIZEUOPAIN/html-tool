@@ -28,7 +28,7 @@ Exemplo:
 	echo "http://site.com.br" | /root/go/bin/html-tool comments 	*(Tras os comentarios da pagina/URL)*
 	echo "http://site.com.br" | /root/go/bin/html-tool tags title 	*(Tras as tags Titulo da pagina/URL)*
 	echo "http://site.com.br" | /root/go/bin/html-tool attribs src 	*(Tras todos os atributos src da pagina/URL)*
-	
+_____________________________________________________________OU___________________________________________________________________________
 	cat urls.txt | html-tool tags title a strong			*(Tras as tags Titulo da pagina/URL)*
 	find . -type f -name "*.html" | html-tool attribs src href 	*(Tras todos os atributos src e href da pagina/URL)*
 	cat urls.txt | html-tool comments 				*(Tras os comentarios da pagina/URL)*
