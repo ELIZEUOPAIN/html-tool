@@ -9,6 +9,8 @@ apt install golang
 # Instalar a ferramenta!
 ```
  go get -u github.com/ELIZEUOPAIN/html-tool
+ 
+ go install github.com/ELIZEUOPAIN/html-tool@latest
 
 ```
 # Como usar:
