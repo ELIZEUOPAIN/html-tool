@@ -152,11 +152,11 @@ func main() {
 		fmt.Println("	comments                Extrai comentários")
 		fmt.Println("")
 		fmt.Println("Exemplos:")
-		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool comments ") 
+		fmt.Println("	echo site.com.br | /root/go/bin/html-tool comments ") 
 			    //Filtra os comentarios da pagina/URL
-		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool tags title ") 
+		fmt.Println("	echo site.com.br | /root/go/bin/html-tool tags title ") 
 			    //Filtra as tags Titulo da pagina/URL
-		fmt.Println("	echo ""http://site.com.br"" | /root/go/bin/html-tool attribs src ")
+		fmt.Println("	echo site.com.br| /root/go/bin/html-tool attribs src ")
 			    //Filtra todos os atributos src da pagina/URL
 		fmt.Println("	cat urls.txt | html-tool tags title a strong")
 			    //Filtra as tags Titulo da pagina/URL
