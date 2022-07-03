@@ -10,6 +10,8 @@ apt install golang
 ```
  go get -u github.com/ELIZEUOPAIN/html-tool
  
+ ```
+ ```
  go install github.com/ELIZEUOPAIN/html-tool@latest
 
 ```
