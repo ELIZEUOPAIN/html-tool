@@ -47,3 +47,5 @@ OBS: As vezes não é possivel ultilizar a ferramenta ultilizando apenas o "html
 *Option to ignore certificate errors
         
 *Option to output filename/URL with output
+
+<a href="https://www.buymeacoffee.com/elizeudasdores"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=elizeudasdores&button_colour=FF5F5F&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00" /></a>
